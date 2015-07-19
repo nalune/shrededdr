@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+
+@include border-box-sizing; // uses border box sizing like old IE
+
+
+
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  container: 60em,   
+  gutters: 1/4, 
+  gutter-position: inside, 
+);
+
+$green  : #00878D;
+$orange : #FF9000;
+$dark	: #586D6E;
+$light	: #C3CFC6;
+$black  : #000000;
+$white	: #FFFFFF;
+
+$backgroundColor : $white;
+$typeDefault     : $black;
+$headerSubBg	 : $dark;
+
+
+//Font variables
+
+$fontfamily : 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial,  sans-serif;
+
+$thin : 300;
+$normal : 400;
+$bold : 600;
+$heavy : 700;
+
+
+$mainFont	:	$thin 1em/1.5em $fontfamily;
+$headFont	: 	$normal 1.5em/1.5em $fontfamily;
+$headColor	: 	$light;
+
+
+//breakpoint variables
+
+$narrowscreen: 400px;
+$standartscreen: 650px;
+$smallscreen: max-width 650px;
+$mediumscreen: 650px 960px;
+$widescreen: 1200px;
