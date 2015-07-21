@@ -94,7 +94,6 @@ body {
 
 /* line 3, ../../../components/sass/modules/_intro.scss */
 header video {
-  position: fixed;
   left: 0;
   bottom: 0;
   min-width: 100%;
@@ -116,26 +115,26 @@ header .hgroup {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 21, ../../../components/sass/modules/_intro.scss */
+/* line 22, ../../../components/sass/modules/_intro.scss */
 header .hgroup h1 {
   color: white;
   font-size: 5em;
   font-weight: 600;
-  line-height: .8em;
+  line-height: 1.2em;
   text-transform: uppercase;
   text-shadow: black 0 0 60px;
   text-align: center;
   display: block;
 }
 @media (max-width: 650px) {
-  /* line 21, ../../../components/sass/modules/_intro.scss */
+  /* line 22, ../../../components/sass/modules/_intro.scss */
   header .hgroup h1 {
     font-size: 2.2em;
     line-height: 1.2em;
     display: inline;
   }
 }
-/* line 40, ../../../components/sass/modules/_intro.scss */
+/* line 41, ../../../components/sass/modules/_intro.scss */
 header .hgroup h2 {
   color: #ff9000;
   font-size: 2em;
@@ -143,7 +142,7 @@ header .hgroup h2 {
   display: block;
   margin-top: 30px;
 }
-/* line 49, ../../../components/sass/modules/_intro.scss */
+/* line 50, ../../../components/sass/modules/_intro.scss */
 header .hgroup h2 span {
   background-color: #586d6e;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -152,7 +151,7 @@ header .hgroup h2 span {
   text-align: center;
 }
 @media (max-width: 650px) {
-  /* line 49, ../../../components/sass/modules/_intro.scss */
+  /* line 50, ../../../components/sass/modules/_intro.scss */
   header .hgroup h2 span {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
@@ -160,27 +159,178 @@ header .hgroup h2 span {
   }
 }
 @media (max-width: 650px) {
-  /* line 40, ../../../components/sass/modules/_intro.scss */
+  /* line 41, ../../../components/sass/modules/_intro.scss */
   header .hgroup h2 {
     font-size: 1.2em;
   }
 }
-/* line 74, ../../../components/sass/modules/_intro.scss */
+/* line 75, ../../../components/sass/modules/_intro.scss */
 header #arrow {
   position: absolute;
   left: 50%;
   bottom: 50px;
 }
-/* line 80, ../../../components/sass/modules/_intro.scss */
+/* line 81, ../../../components/sass/modules/_intro.scss */
 header #arrow img {
   position: relative;
   left: -50%;
   max-width: 70px;
 }
-/* line 87, ../../../components/sass/modules/_intro.scss */
+/* line 88, ../../../components/sass/modules/_intro.scss */
 header #arrow img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+}
+
+/* line 1, ../../../components/sass/modules/_nav.scss */
+header #nav {
+  width: 100%;
+  z-index: 100;
+  background: #ff9000;
+  position: relative;
+  top: -10px;
+}
+/* line 12, ../../../components/sass/_mixins.scss */
+header #nav:before, header #nav:after {
+  content: '';
+  display: table;
+}
+/* line 20, ../../../components/sass/_mixins.scss */
+header #nav:after {
+  clear: both;
+}
+/* line 11, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.5@global/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+header #nav .navbar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 15, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar .brand {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  float: left;
+  font-weight: 700;
+  font-family: 400 1.5em/1.5em "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 650px) {
+  /* line 15, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar .brand {
+    padding: 0;
+  }
+}
+/* line 32, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar .brand a {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 1.5em;
+  color: #00878d;
+  background: #c3cfc6;
+}
+@media (max-width: 650px) {
+  /* line 32, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar .brand a {
+    font-size: 1em;
+    padding: 15px 10px;
+  }
+}
+/* line 52, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 56, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li {
+  float: left;
+}
+/* line 60, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a {
+  display: inline-block;
+  font: 300 1em/1.5em "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: white;
+  padding: 15px 10px 15px 45px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 5px;
+}
+/* line 70, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a:hover {
+  background-color: #00878d;
+  transition-delay: 0.2s;
+}
+/* line 79, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.features {
+  background-image: url("../images/icons/features.png");
+}
+/* line 80, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.results {
+  background-image: url("../images/icons/results.png");
+}
+/* line 81, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.facts {
+  background-image: url("../images/icons/facts.png");
+}
+/* line 82, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.prices {
+  background-image: url("../images/icons/prices.png");
+}
+/* line 83, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.enroll {
+  background-image: url("../images/icons/enroll.png");
+}
+@media (max-width: 650px) {
+  /* line 60, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    padding: 10px 18px;
+    margin-top: 5px;
+    background-size: 25px;
+  }
+  /* line 93, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a span {
+    display: none;
+  }
+  /* line 94, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a::after {
+    content: '\000a0';
+    display: block;
+  }
+}
+@media (min-width: 650px) and (max-width: 960px) {
+  /* line 60, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    padding-left: 10px;
+  }
+  /* line 108, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a.icon {
+    background-image: none;
+  }
+}
+/* line 114, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.active {
+  background-color: #00878d;
 }
 
 /*# sourceMappingURL=style.css.map */
