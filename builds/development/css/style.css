@@ -90,6 +90,31 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: #c3cfc6;
+}
+
+/* line 9, ../../../components/sass/_layout.scss */
+.scene {
+  position: relative;
+  padding: 20px 0;
+}
+/* line 14, ../../../components/sass/_layout.scss */
+.scene article {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.5@global/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.scene article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  /* line 9, ../../../components/sass/_layout.scss */
+  .scene {
+    padding: 40px 0;
+  }
 }
 
 /* line 3, ../../../components/sass/modules/_intro.scss */
@@ -239,8 +264,8 @@ header #nav .navbar .brand a {
   display: inline-block;
   padding: 15px 20px;
   font-size: 1.5em;
-  color: #00878d;
-  background: #c3cfc6;
+  color: white;
+  background: #d31996;
 }
 @media (max-width: 650px) {
   /* line 32, ../../../components/sass/modules/_nav.scss */
@@ -331,6 +356,56 @@ header #nav .navbar ul li a.enroll {
 /* line 114, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a.active {
   background-color: #00878d;
+}
+
+/* line 2, ../../../components/sass/modules/_features.scss */
+#features {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 10px 0 5px -2px #888;
+}
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.5@global/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#features:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 14, ../../../components/sass/modules/_features.scss */
+  #features #changes section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 3.33333%;
+    padding-right: 3.33333%;
+  }
+}
+/* line 21, ../../../components/sass/modules/_features.scss */
+#features #changes section h2 {
+  color: black;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 8px solid #ff9000;
+  text-transform: uppercase;
+}
+/* line 31, ../../../components/sass/modules/_features.scss */
+#features #changes section ul {
+  font-size: 140%;
+  line-height: 300%;
+  margin-top: 30px;
+}
+/* line 37, ../../../components/sass/modules/_features.scss */
+#features #changes section ul li {
+  font-weight: 400;
+}
+/* line 41, ../../../components/sass/modules/_features.scss */
+#features #changes section ul li i {
+  margin-right: 15px;
+  color: #586d6e;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+
+#features
+{
+	@include container(70%);
+	background-color: $white;
+	box-shadow: 10px 0 5px -2px #888;
+
+
+
+
+	#changes
+	{
+
+		section
+		{
+			@include breakpoint($standartscreen)
+			{
+				@include span(1 of 3);
+			}
+
+			h2
+			{
+				color: $black;
+				display: inline-block;
+				padding-bottom: 10px;
+				border-bottom: 8px solid $orange;
+				text-transform: uppercase;
+
+			}
+
+			ul 
+			{
+				font-size: 140%;
+				line-height: 300%;
+				margin-top: 30px;
+
+				li 
+				{
+					font-weight: $normal;
+
+					i 
+					{
+						margin-right: 15px;
+						color: $dark;
+					}
+				}
+
+			}
+		}
+
+	}
+}

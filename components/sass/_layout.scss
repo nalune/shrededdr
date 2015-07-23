@@ -3,4 +3,23 @@ body
 	position: absolute;	
 	width: 100%;
 	height: 100%;
+	background-color: $light;
 }
+
+.scene
+{
+	position: relative;
+	padding: 20px 0;
+
+	article
+	{
+		@include container(95%);
+	}
+
+	@include breakpoint($widescreen)
+	{
+		padding: 40px 0;
+		
+	}
+}
+
