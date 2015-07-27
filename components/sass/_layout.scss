@@ -23,3 +23,8 @@ body
 	}
 }
 
+.cutoff
+{
+	position: relative;
+	@include container(100%);
+}
