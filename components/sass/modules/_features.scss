@@ -108,6 +108,13 @@
 			font-size: 4em;
 			font-weight: $heavy;
 
+			@include breakpoint($smallscreen)
+			{
+				@include container(95%);
+				padding: 50px 0;
+				font-size: 2em;
+			}
+
 			span 
 			{
 				color: $magenta;
